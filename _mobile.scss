@@ -1,0 +1,66 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding: 0;
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./img/background-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 32px;
+        max-width: 343px;
+        text-align: center;
+
+        .bold {
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+
+    .product-box {
+        justify-content: center;
+
+        .product {
+
+            &__img {
+                max-width: 343px;
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+
+    .product-box {
+
+        .product {
+
+            &__img {
+                max-width: 300px;
+            }
+        }
+    }
+}
