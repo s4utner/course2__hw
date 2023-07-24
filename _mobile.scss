@@ -24,6 +24,16 @@
         text-align: center;
     }
 
+    .heading {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+
+        .screamer {
+            display: none;
+        }
+    }
+
     .text {
         font-size: 14px;
         font-weight: 300;
@@ -48,6 +58,31 @@
             &__img {
                 max-width: 343px;
             }
+        }
+    }
+
+    .game1 {
+        flex-direction: column;
+        gap: 64px;
+
+        .game__info {
+            padding-top: 51px;
+            padding-bottom: 0;
+            align-items: center;
+
+            .game1__text {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 344px;
+            height: 236px;
+            padding-bottom: 85px;
         }
     }
 }
