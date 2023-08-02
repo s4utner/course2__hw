@@ -100,21 +100,21 @@ body {
   color: #fff;
 }
 
-.game1 {
+.gameMonths {
   background-color: #000915;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.game1 .game__info {
+.gameMonths .game__info {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-top: 282px;
   padding-bottom: 282px;
 }
-.game1 .game__info .game1__text {
+.gameMonths .game__info .gameMonths__text {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
@@ -174,23 +174,23 @@ body {
   .product-box .product__img {
     max-width: 343px;
   }
-  .game1 {
+  .gameMonths {
     flex-direction: column;
     gap: 64px;
   }
-  .game1 .game__info {
+  .gameMonths .game__info {
     padding-top: 51px;
     padding-bottom: 0;
     align-items: center;
   }
-  .game1 .game__info .game1__text {
+  .gameMonths .game__info .gameMonths__text {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     color: #fff;
     text-align: center;
   }
-  .game1__img {
+  .gameMonths__img {
     width: 344px;
     height: 236px;
     padding-bottom: 85px;
@@ -200,7 +200,7 @@ body {
   .product-box .product__img {
     max-width: 300px;
   }
-  .game1__img {
+  .gameMonths__img {
     width: 300px;
     height: 200px;
   }

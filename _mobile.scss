@@ -61,7 +61,7 @@
         }
     }
 
-    .game1 {
+    .gameMonths {
         flex-direction: column;
         gap: 64px;
 
@@ -70,7 +70,7 @@
             padding-bottom: 0;
             align-items: center;
 
-            .game1__text {
+            .gameMonths__text {
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 22px;
@@ -99,7 +99,7 @@
         }
     }
 
-    .game1 {
+    .gameMonths {
         &__img {
             width: 300px;
             height: 200px;
