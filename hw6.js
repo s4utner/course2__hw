@@ -72,7 +72,7 @@ console.log(arr8);
 //Задание 9
 
 let arr9 = [[1, 2, 3,], [4, 5, 6]];
-arr9 = arr9.join();
+arr9 = arr9.flat();
 console.log(arr9);
 
 //Задание 10
@@ -124,14 +124,10 @@ console.log(result);
 const arr15 = [];
 
 for (let i = 0; i < 6; i++) {
-    arr15[i] = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+    arr15[i] = Math.round(Math.random() * (10 - 1) + 1);
 };
 
-console.log(arr15);
+let average = arr15.reduce((el, sum) => el + sum) / arr15.length;
 
-for (let i = 0; i < arr15.length - 1; i++) {
-    let average = (arr15[i] + arr15[i + 1]) / arr15.length;
-    // return average; // ???
-};
-
-// console.log(average); // ???
+console.log(`Исходный массив: ${arr15}`);
+console.log(`Среднее арифметическое: ${average}`);

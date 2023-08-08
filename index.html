@@ -28,7 +28,7 @@
                 <h2 class="product__name">Игра 1</h2>
             </div>
         </a>
-        <a href="#" class="product">
+        <a href="#gameWords" class="product">
             <img class="product__img" src="./img/game2.jpg" alt="game2">
             <div class="product__namebox">
                 <h2 class="product__name">Игра 2</h2>
@@ -41,18 +41,32 @@
             </div>
         </a>
     </section>
-    <section class="gameMonths center" id="gameMonths">
+    <section class="game center" id="gameMonths">
         <div class="game__info">
-            <h2 class="heading">Времена года<span class="screamer">!</span></h2>
-            <p class="gameMonths__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+            <h2 class="heading">Времена года</h2>
+            <p class="game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                 времени года
-                он относится</p>
+                он относится.</p>
             <form action="#">
                 <button class="button" onclick="startGameMonths();">Играть!</button>
             </form>
         </div>
-        <img class="gameMonths__img" src="./img/game1__img.svg" alt="gameMonths img">
+        <img class="game__img" src="./img/game1__img.svg" alt="gameMonths img">
     </section>
+    <section class="game center reverse" id="gameWords">
+        <img class="game__img" src="./img/game2__img.svg" alt="gameWords img">
+        <div class="game__info">
+            <h2 class="heading">Запомни слова</h2>
+            <p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <form action="#">
+                <button class="button">Играть!</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
     <script src="script.js"></script>
     <script src="hw6.js"></script>
 </body>
