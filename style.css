@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .center {
@@ -25,7 +26,6 @@ body {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  color: #fff;
   margin-bottom: 32px;
   max-width: 789px;
 }
@@ -34,20 +34,17 @@ body {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
-  color: #fff;
 }
 
 .text {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
-  color: #fff;
   margin-bottom: 44px;
   max-width: 481px;
 }
 .text .bold {
   font-weight: 700;
-  color: #fff;
 }
 
 .button {
@@ -66,7 +63,7 @@ body {
 }
 .button:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  background-color: #EB443F;
 }
 
 .product-box {
@@ -75,7 +72,7 @@ body {
   padding-bottom: 128px;
   gap: 32px;
   display: flex;
-  gap: 32px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .product-box .product {
@@ -83,9 +80,12 @@ body {
   display: flex;
   align-items: flex-end;
   transition: all 0.3s;
+  box-sizing: border-box;
 }
 .product-box .product:hover {
   transform: scale(1.05);
+  /* border: 3px solid #44D2FF;
+  border-radius: 22px; */
 }
 .product-box .product__img {
   border-radius: 20px;
@@ -100,28 +100,40 @@ body {
   color: #fff;
 }
 
-.gameMonths {
+.game {
   background-color: #000915;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.gameMonths .game__info {
+.game .game__info {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-top: 282px;
   padding-bottom: 282px;
+  max-width: 600px;
 }
-.gameMonths .game__info .gameMonths__text {
+.game .game__info .game__text {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
-  color: #fff;
-  margin-bottom: 44px;
-  max-width: 600px;
-  margin-bottom: 0;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 @media (max-width: 767px) {
@@ -151,9 +163,6 @@ body {
     line-height: 39px;
     text-align: center;
   }
-  .heading .screamer {
-    display: none;
-  }
   .text {
     font-size: 14px;
     font-weight: 300;
@@ -174,33 +183,36 @@ body {
   .product-box .product__img {
     max-width: 343px;
   }
-  .gameMonths {
+  .game {
     flex-direction: column;
     gap: 64px;
   }
-  .gameMonths .game__info {
+  .game .game__info {
     padding-top: 51px;
     padding-bottom: 0;
     align-items: center;
   }
-  .gameMonths .game__info .gameMonths__text {
+  .game .game__info .game__text {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     color: #fff;
     text-align: center;
   }
-  .gameMonths__img {
+  .game__img {
     width: 344px;
     height: 236px;
     padding-bottom: 85px;
+  }
+  .reverse {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 374px) {
   .product-box .product__img {
     max-width: 300px;
   }
-  .gameMonths__img {
+  .game__img {
     width: 300px;
     height: 200px;
   }

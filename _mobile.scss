@@ -28,10 +28,6 @@
         font-size: 32px;
         line-height: 39px;
         text-align: center;
-
-        .screamer {
-            display: none;
-        }
     }
 
     .text {
@@ -61,7 +57,7 @@
         }
     }
 
-    .gameMonths {
+    .game {
         flex-direction: column;
         gap: 64px;
 
@@ -70,7 +66,7 @@
             padding-bottom: 0;
             align-items: center;
 
-            .gameMonths__text {
+            .game__text {
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 22px;
@@ -84,6 +80,10 @@
             height: 236px;
             padding-bottom: 85px;
         }
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
 
@@ -99,7 +99,7 @@
         }
     }
 
-    .gameMonths {
+    .game {
         &__img {
             width: 300px;
             height: 200px;
