@@ -112,7 +112,7 @@ const dateFunction = (date) => {
     if (seconds < 10) {
         seconds = '0' + seconds;
     }
-    const formattedTime = `${hours}:${minutes}:${seconds}`;
+    const formattedTime = `Время: ${hours}:${minutes}:${seconds}`;
 
     console.log(formattedDate);
     console.log(formattedTime);
