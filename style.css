@@ -204,7 +204,7 @@ body {
     height: 236px;
     padding-bottom: 85px;
   }
-  .reverse {
+  .flex-reverse {
     flex-direction: column-reverse;
   }
 }
