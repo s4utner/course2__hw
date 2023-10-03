@@ -16,7 +16,7 @@ const startGameMonths = () => {
     }
 }
 
-let startGameWords = () => {
+const startGameWords = () => {
     let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     words = words.sort(() => Math.random() - 0.5);
     words = words.join(', ');
@@ -48,3 +48,35 @@ let startGameWords = () => {
         alert('Варианты ответов неверны');
     }
 }
+
+const startGameRiddles = () => {
+    let answer = prompt(`В поле ввода введите ответ на загадку:
+    Зимой и летом одним цветом`);
+
+    if (answer.toLowerCase() === 'ель' || answer.toLowerCase() === 'елка' || answer.toLowerCase() === 'ёлка' || answer.toLowerCase() === 'елочка' || answer.toLowerCase() === 'ёлочка') {
+        alert(`Верно!`);  
+    } else {   
+        alert('Не угадал( Запускай заново');
+        return;
+    }   
+
+    answer = prompt(`Следующая загадка:
+    Висит груша, нельзя скушать`);
+   
+        if (answer.toLowerCase() === 'лампа' || answer.toLowerCase() === 'лампочка') {
+            alert(`Верно!`); 
+         } else {
+            alert('Не угадал( Запускай заново');
+            return;
+    };
+
+    answer = prompt(`Последняя загадка:
+    Два конца, два кольца, посредине гвоздик`);
+
+    if (answer.toLowerCase() === 'ножницы') {
+            alert(`Поздравляю, ты победил!)`); 
+         } else {
+            alert('Не угадал( Запускай заново');
+            return;
+    }  
+};
