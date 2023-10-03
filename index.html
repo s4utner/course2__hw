@@ -17,28 +17,17 @@
         <h1 class="title">Добро пожаловать на мой сайт !</h1>
         <p class="text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
                 class="text bold">поехали</span> и <span class="text bold">приступай</span></p>
-        <form action="#" class="form">
-            <button class="button">Поехали!</button>
-        </form>
+        <a href="#product-box" class="button">Поехали!</a>
     </header>
-    <section class="product-box center">
-        <a href="#gameMonths" class="product">
-            <img class="product__img" src="./img/game1.jpg" alt="game1">
-            <div class="product__namebox">
-                <h2 class="product__name">Игра 1</h2>
-            </div>
+    <section class="product-box center" id="product-box">
+        <a href="#gameMonths" class="product game1">
+            <span class="product__name">Игра 1</span>
         </a>
-        <a href="#gameWords" class="product">
-            <img class="product__img" src="./img/game2.jpg" alt="game2">
-            <div class="product__namebox">
-                <h2 class="product__name">Игра 2</h2>
-            </div>
+        <a href="#gameWords" class="product game2">
+            <span class="product__name">Игра 2</span>
         </a>
-        <a href="#" class="product">
-            <img class="product__img" src="./img/game3.jpg" alt="game3">
-            <div class="product__namebox">
-                <h2 class="product__name">Игра 3</h2>
-            </div>
+        <a href="#gameRiddles" class="product game3">
+            <span class="product__name">Игра 3</span>
         </a>
     </section>
     <section class="game center" id="gameMonths">
@@ -64,11 +53,20 @@
             </form>
         </div>
     </section>
+    <section class="game center background justify-center" id="gameRiddles">
+        <div class="game__info align-center riddles__info">
+            <h2 class="heading">Игра в загадки</h2>
+            <p class="game__text align-center">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный
+                ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <form action="#">
+                <button class="button" onclick="startGameRiddles();">Играть!</button>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
         <p class="footer__text">Все права защищены</p>
     </footer>
     <script src="script.js"></script>
-    <script src="hw8.js"></script>
 </body>
 
 </html>

@@ -48,12 +48,10 @@
 
     .product-box {
         justify-content: center;
+        gap: 32px;
 
         .product {
-
-            &__img {
-                max-width: 343px;
-            }
+            border: none;
         }
     }
 
@@ -84,6 +82,14 @@
 
     .flex-reverse {
         flex-direction: column-reverse;
+    }
+
+    .background {
+        height: 800px;
+    }
+
+    .justify-center {
+        justify-content: flex-start;
     }
 }
 
